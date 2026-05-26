@@ -1,0 +1,8 @@
+{
+  "presets": [
+    { "name": "Continuous (~0.1s gate)", "period_ms": 150 },
+    { "name": "0.5s", "period_ms": 500 },
+    { "name": "1s", "period_ms": 1000 },
+    { "name": "2s", "period_ms": 2000 }
+  ]
+}

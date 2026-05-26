@@ -1,0 +1,55 @@
+{
+  "presets": [
+    {
+      "name": "Freq CH1 1s gate",
+      "init_commands": [
+        "*RST",
+        "*CLS",
+        "*SRE 0",
+        "*ESE 0",
+        ":STAT:PRES",
+        ":FUNC 'FREQ 1'",
+        ":FREQ:ARM:STAR:SOUR IMM",
+        ":FREQ:ARM:STOP:SOUR TIM",
+        ":FREQ:ARM:STOP:TIM 1.0"
+      ],
+      "measure_command": "READ:FREQ?",
+      "scale": 1.0,
+      "unit": "Hz"
+    },
+    {
+      "name": "Freq CH1 0.1s gate",
+      "init_commands": [
+        "*RST",
+        "*CLS",
+        "*SRE 0",
+        "*ESE 0",
+        ":STAT:PRES",
+        ":FUNC 'FREQ 1'",
+        ":FREQ:ARM:STAR:SOUR IMM",
+        ":FREQ:ARM:STOP:SOUR TIM",
+        ":FREQ:ARM:STOP:TIM 0.1"
+      ],
+      "measure_command": "READ:FREQ?",
+      "scale": 1.0,
+      "unit": "Hz"
+    },
+    {
+      "name": "Freq CH1 0.1s gate (MHz)",
+      "init_commands": [
+        "*RST",
+        "*CLS",
+        "*SRE 0",
+        "*ESE 0",
+        ":STAT:PRES",
+        ":FUNC 'FREQ 1'",
+        ":FREQ:ARM:STAR:SOUR IMM",
+        ":FREQ:ARM:STOP:SOUR TIM",
+        ":FREQ:ARM:STOP:TIM 0.1"
+      ],
+      "measure_command": "READ:FREQ?",
+      "scale": 0.000001,
+      "unit": "MHz"
+    }
+  ]
+}
