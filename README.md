@@ -12,7 +12,8 @@ Agilent 53131A/132A 225 MHz ユニバーサルカウンタ向け GPIB/VISA リ�
 
 ## スクリーンショット
 
-<!-- 画像を貼る -->
+<img width="1579" height="902" alt="image" src="https://github.com/user-attachments/assets/09d0fce9-a554-4a76-a105-db270f6bc62f" />
+
 
 ## 必要環境
 
